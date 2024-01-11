@@ -1,0 +1,146 @@
+
+.side_bar{
+    height: auto;
+    background-color: rgb(13, 14, 17);
+    width: 200px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 0.3s;
+}
+.closeSidebar{
+    height: 100vh;
+    width:  200px;
+    min-width: 200px;
+    background-color: rgb(13, 14, 17);
+    position: relative;
+    margin-left: -200px; /* Use transform for smooth sliding transition */
+    transition:  0.3s; /* Use transform property for the transition */
+    display: flex;
+    flex-direction: column;
+}
+
+.side_bar_header{
+    height: 10vh;
+}
+
+.side_bar_footer{
+    height: 20vh;
+}
+.side_bar_body{
+    height: 70vh;
+}
+
+.side_bar_header .close_button{
+    position: absolute;
+    top: 50vh;
+    left: 100%;
+    
+}
+.side_bar_header .close_button i{
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 6px;
+    color: rgb(155, 154, 153);
+    cursor: pointer;
+    
+}
+.side_bar_header  .new_chat{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.new_chat i{
+    font-size: 12px;
+}
+.new_chat .fa-spider{
+    background-color: beige;
+    border-radius: 20px;
+    padding: 4px;
+    text-align: center;
+}
+.new_chat .fa-pen-to-square{
+    color: beige;
+    padding: 4px;
+    text-align: center;
+}
+.new_chat:hover{
+    background-color: rgb(37, 40, 44);
+}
+.upgrade{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    
+}
+.upgrade:hover{
+    background-color: rgb(37, 40, 44);
+}
+.upgrade .fa-arrow-up-from-bracket{
+    font-size: 12px;
+    border: 1px solid rgb(233, 228, 228);
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    color: rgb(228, 223, 223);
+    margin-right: 6px;
+}
+.upgrade .upgrade_texts{
+    display: flex;
+    flex-direction: column;
+}
+.upgrade_texts h5{
+    color: rgb(224, 219, 219);
+    font-size: 12px;
+}
+.upgrade_texts small{
+    color: rgb(180, 182, 184);
+    font-size: 9px;
+}
+.profile{
+    width: 90%;
+    margin: auto;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+.profile:hover{
+    background-color: rgb(37, 40, 44);
+}
+.profile .profile_photo{
+    font-size: 12px;
+    border: 1px solid rgb(233, 228, 228);
+    background-color: rgb(0, 119, 255);
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    color: rgb(228, 223, 223);
+    margin-right: 6px;
+}
+.profile .profile_name{
+    color: rgb(180, 182, 184);
+    font-size: 12px;
+}
+@media(max-width:500px){
+    .side_bar{
+        position: absolute;
+    }
+    .closeSidebar{
+        position: absolute;
+    }
+}
